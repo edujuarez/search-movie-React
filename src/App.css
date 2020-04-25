@@ -19,3 +19,24 @@
   margin-bottom: 24px;
   width: 48%;
 }
+.title {
+  align-self: center;
+
+}
+.columns {
+  justify-self: left;
+  padding: 20px;
+  flex-direction: row;
+  background-color: aquamarine;
+}
+.column {
+  align-content: center;
+}
+#homeMenu {
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+}

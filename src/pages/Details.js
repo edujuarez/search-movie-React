@@ -46,12 +46,39 @@ export class Details extends Component {
 
         return (
             <div>
-                < ButtonBackToHome />
-                <h1>{Title}</h1>
-                <img src={Poster} alt={Title}/>
-                <h3>{Actors}</h3>
-                <span>{Metascore}</span>
-                <p>{Plot}</p>
+                <section class="columns is-multiline is-mobile">
+                    <div class="column is-full">
+                        <h1 class="title">{Title}</h1>
+                    </div>
+                    
+                    
+                    <div class="column is-half">
+                    <img src={Poster} alt={Title}/>
+                    </div>
+                    <div class="column is-half">
+                        <div class="column is-half" >
+                        <h2 class="subtitle">
+                            <span><strong>Sinopsis: </strong> {Plot}</span>
+                        </h2>
+                    </div>
+                    <div class="column is-half" >
+                        <h2 class="subtitle">
+                           <strong>Cast: </strong>
+                           <span>{Actors}</span>
+                        </h2>
+                    </div>
+                    <div class="column is-half" >
+                        <h2 class="subtitle">
+                            <strong>Score: </strong><span>{Metascore}</span>
+                        </h2>
+                    </div>
+                    </div>
+                   
+                    <div class="column is-full">
+                      < ButtonBackToHome />  
+                    </div>
+                    
+                 </section>
             </div>
         )
     }

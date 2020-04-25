@@ -17,16 +17,20 @@ export class Home extends Component {
       }
     render () {
         return (
-            <div>
+            <div id="homeMenu">
+            <div >
                 <Title>Search Movies</Title>
                 <div className='SearchForm-wrapper'>
                     <SearchForm onResults={this._handleResults}/>
                 </div>
+                <div></div>
                 {this.state.usedSearch
                     ?  this._renderResults()
                     : <small>Use the form to search a movie</small>
                 }
             </div>
+            </div>
+
         )
     }
 }

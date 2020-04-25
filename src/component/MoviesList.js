@@ -10,7 +10,7 @@ export class MoviesList extends Component {
     render () {
         const { movies } = this.props
         return(
-          <div className='MoviesList'>
+          <div className='MoviesList' >
             {
               movies.map(movie => {
                 return (
