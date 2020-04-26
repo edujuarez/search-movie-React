@@ -28,11 +28,15 @@
   padding: 20px;
   flex-direction: row;
   background-color: aquamarine;
+  margin: 20px;
+  border-radius: 1cm;
 }
 .column {
   align-content: center;
 }
 #homeMenu {
+  margin: 20px;
+  border-radius: 1cm;
   background-color: aquamarine;
   display: flex;
   align-items: center;
