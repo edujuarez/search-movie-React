@@ -17,7 +17,8 @@
 
 .MoviesList-item {
   margin-bottom: 24px;
-  width: 48%;
+  width: 33%;
+  padding: 1%;
 }
 .title {
   align-self: center;
