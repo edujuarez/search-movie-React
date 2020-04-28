@@ -10,11 +10,11 @@ export class MoviesList extends Component {
     render () {
         const { movies } = this.props
         return(
-          <div className='MoviesList' >
+          <div className='MoviesList columns' >
             {
               movies.map(movie => {
                 return (
-                <div key= { movie.imdbID } className='MoviesList-item'>
+                <div key= { movie.imdbID } className='MoviesList-item column'>
                   < Movie
                     id= { movie.imdbID }
                     title= { movie.Title }
