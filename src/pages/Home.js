@@ -17,7 +17,7 @@ export class Home extends Component {
       }
     render () {
         return (
-            <div className="">
+            <div>
                 <div id="homeMenu" className="columns">
                     <div className="column is-full">
                         <Title>Search Movies</Title>

@@ -9,12 +9,19 @@ export class MoviesList extends Component {
 
     render () {
         const { movies } = this.props
+        
+        //Filtro el arreglo que devuelve la API para no renderizar repetidos y evitar bugs
+        let moviesFiltered = movies.filter((valorActual, indiceActual, arreglo) => {
+          return arreglo.findIndex(
+            valorDelArreglo =>JSON.stringify(valorDelArreglo) === JSON.stringify(valorActual)
+            ) === indiceActual
+        });
         return(
           <div className='MoviesList columns' >
             {
-              movies.map(movie => {
+              moviesFiltered.map(movie => {
                 return (
-                <div key= { movie.imdbID } className='MoviesList-item column'>
+                <div key= { movie.imdbID } className='MoviesList-item column is-one-fifth'>
                   < Movie
                     id= { movie.imdbID }
                     title= { movie.Title }

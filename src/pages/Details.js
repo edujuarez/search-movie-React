@@ -46,35 +46,35 @@ export class Details extends Component {
 
         return (
             <div>
-                <section class="columns is-multiline is-mobile">
-                    <div class="column is-full">
-                        <h1 class="title">{Title}</h1>
+                <section className="columns is-multiline is-mobile">
+                    <div className="column is-full">
+                        <h1 className="title">{Title}</h1>
                     </div>
                     
                     
-                    <div class="column is-half">
+                    <div className="column is-half">
                     <img src={Poster} alt={Title}/>
                     </div>
-                    <div class="column is-half">
-                        <div class="column is-half" >
-                        <h2 class="subtitle">
+                    <div className="column is-half">
+                        <div className="column is-half" >
+                        <h2 className="subtitle">
                             <span><strong>Sinopsis: </strong> {Plot}</span>
                         </h2>
                     </div>
-                    <div class="column is-half" >
-                        <h2 class="subtitle">
+                    <div className="column is-half" >
+                        <h2 className="subtitle">
                            <strong>Cast: </strong>
                            <span>{Actors}</span>
                         </h2>
                     </div>
-                    <div class="column is-half" >
-                        <h2 class="subtitle">
+                    <div className="column is-half" >
+                        <h2 className="subtitle">
                             <strong>Score: </strong><span>{Metascore}</span>
                         </h2>
                     </div>
                     </div>
                    
-                    <div class="column is-full">
+                    <div className="column is-full">
                       < ButtonBackToHome />  
                     </div>
                     
